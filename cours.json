@@ -1,0 +1,39 @@
+{
+    "SI G1": ["Maj SI - Auto G1+G2", "Maj SI - Genie Meca G1+G2", "Maj SI G1"],
+    "SI G2":["Maj SI - Auto G1+G2", "Maj SI - Genie Meca G1+G2", "Maj SI G2"],
+
+    "Phy G1.1": ["Maj PHY - IFL G1.x", "Maj PHY - IFL G1.x+G2.x+G3.x", "Maj PHY - IFL TP G1.1", "Maj PHY - IFL G1.x+G2.x+G3.x - ENSIMAG REZ DE CHAUSSEE","Maj PHY - POE G1.x+G2.x+G3.x"],
+    "Phy G1.2": ["Maj PHY - IFL G1.x", "Maj PHY - IFL G1.x+G2.x+G3.x", "Maj PHY - IFL TP G1.2", "Maj PHY - IFL G1.x+G2.x+G3.x - ENSIMAG REZ DE CHAUSSEE","Maj PHY - POE G1.x+G2.x+G3.x"],
+
+    "Phy G2.1": ["Maj PHY - IFL G2.x", "Maj PHY - IFL G1.x+G2.x+G3.x", "Maj PHY - IFL G2", "Maj PHY - IFL TP G2.1", "Maj PHY - IFL G1.x+G2.x+G3.x - ENSIMAG REZ DE CHAUSSEE","Maj PHY - POE G1.x+G2.x+G3.x"],
+    "Phy G2.2": ["Maj PHY - IFL G2.x", "Maj PHY - IFL G1.x+G2.x+G3.x", "Maj PHY - IFL G2", "Maj PHY - IFL TP G2.2", "Maj PHY - IFL G1.x+G2.x+G3.x - ENSIMAG REZ DE CHAUSSEE","Maj PHY - POE G1.x+G2.x+G3.x"   ],
+
+    "Phy G3.1": ["Maj PHY - IFL G3.x", "Maj PHY - IFL G1.x+G2.x+G3.x", "Maj PHY - IFL TP G3.1", "Maj PHY - IFL G1.x+G2.x+G3.x - ENSIMAG REZ DE CHAUSSEE", "Maj PHY - POE G1.x+G2.x+G3.x"],
+    "Phy G3.2": ["Maj PHY - IFL G3.x", "Maj PHY - IFL G1.x+G2.x+G3.x", "Maj PHY - IFL TP G3.2", "Maj PHY - IFL G1.x+G2.x+G3.x - ENSIMAG REZ DE CHAUSSEE", "Maj PHY - POE G1.x+G2.x+G3.x"],
+
+    "Maths G1": ["Maj MATHS G1", "Maj MATHS", "Maj MATHS DS","TIERS TEMPS - 16h30 à 17h10"],
+    "Maths G2": ["Maj MATHS G2", "Maj MATHS","Maj MATHS DS","TIERS TEMPS - 16h30 à 17h10"],
+
+    "Chimie": ["Maj CHI -SE", "Maj Chi- orga","Maj CHI -SE - TP"],
+
+    "Info": ["Maj INFO", "Maj INFO soutien"],
+
+    "Chimie G1": [],
+    "Chimie G2": [],
+    "Chimie G3": [],
+
+    "Info G1": [],
+    "Info G2": [],
+
+    "Physique": [],
+    
+    "Maths": ["Min MATHS"],
+
+    "SI G1.1": ["Min SI G1.x", "Min SI BE G1.1"],
+    "SI G1.2": ["Min SI G1.x", "Min SI BE G1.2"],
+    "SI G2.1": ["Min SI G2.x", "Min SI BE G2.1"],
+    "SI G2.2": ["Min SI G2.x", "Min SI BE G2.2"]
+
+
+
+}
