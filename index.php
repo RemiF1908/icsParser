@@ -69,12 +69,11 @@
                 <option value="Info">Info</option>
                 <option value="Phy G1.1">Phy G1.1</option>
                 <option value="Phy G1.2">Phy G1.2</option>
-                <option value="Phy G2.1">Phy G2.2</option>
+                <option value="Phy G2.1">Phy G2.1</option>
                 <option value="Phy G2.2">Phy G2.2</option>
                 <option value="Phy G3.1">Phy G3.1</option>
                 <option value="Phy G3.2">Phy G3.2</option>
             </select>
-
             <label for="majeur2">Majeur 2 :</label>
             <select name="majeur2" id="majeur2" required >
                 <option value="Chimie">Chimie</option>

@@ -13,9 +13,7 @@ h1{
 </style>
 <h1>
 <?php
-// Vérifie si le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Récupère les valeurs des champs du formulaire
     $prenom = $_POST["prenom"];
     $nom = $_POST["nom"];
     $majeur1 = $_POST["majeur1"];
@@ -26,7 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $lv2 = $_POST["lv2"];
     $groupe = $_POST["groupe"];
 
-    // Crée un tableau associatif avec les données
     $id =uniqid();
     $userData = [
         "prenom" => $prenom,
@@ -42,22 +39,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "id" => $id
     ];
 
-    // Charge les données existantes depuis le fichier JSON
     $existingData = json_decode(file_get_contents("userData.json"), true);
 
-    // Ajoute les nouvelles données au tableau existant
     $existingData[] = $userData;
 
     // Encode le tableau mis à jour en JSON avec indentation
     $jsonData = json_encode($existingData, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 
-    // Enregistre les données JSON mises à jour dans le fichier
     file_put_contents("userData.json", $jsonData);
     shell_exec('bash dlEDT.sh');
-    // Affiche un message de confirmation
     echo "Voici le lien : <a>http://gga.alwaysdata.net/edt/edts/edt_".$id.".ics</a>";
 } else {
-    // Le formulaire n'a pas été soumis, affiche un message d'erreur
     echo "Le formulaire n'a pas été soumis.";
 }
 ?>
