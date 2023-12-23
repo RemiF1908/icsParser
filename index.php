@@ -1,3 +1,7 @@
+<?php
+$semester = "S4"
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -57,7 +61,7 @@
 <body>
     <div class="container">
         <h2>Formulaire de sélection</h2>
-        <form action="./post" method="post">
+        <form  action="<?php echo htmlspecialchars($semester); ?>" method="post">
             
             <label for="prenom">Prénom :</label>
             <input name="prenom" id="prenom" required >
