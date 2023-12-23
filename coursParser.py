@@ -5,7 +5,7 @@ import json
 '''
 Ce programme permet de detecter les cours présent dans l'EDT qui ne sont pas encore répertorier dans cours.json
 '''
-
+semestre = "S4"
 g = open('ADECal.ics','rb')
 
 cal = Calendar()
@@ -15,7 +15,7 @@ gcal = Calendar.from_ical(g.read())
 
 
 coursBDD=[]
-with open("cours.json", "r") as read_file:
+with open("cours"+semestre+".json", "r") as read_file:
     data = json.load(read_file)     
 
 for key, value in data.items():
@@ -38,8 +38,7 @@ for e in coursEDT:
         coursAdd.append(e)
 
 
-print(coursEDT)
-print(coursBDD)
+
 print(coursAdd)
 
 

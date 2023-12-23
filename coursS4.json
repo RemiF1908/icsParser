@@ -1,0 +1,18 @@
+{
+    "MF": ["Espaces vectoriels normes"],
+    "PC": ["Physique nucleaire", "Physique quantique"],
+    "GP": ["Genie des procedes"],
+
+    "EL": ["Electronique analogique", "Electronique numerique"],
+    "MMC": ["Elasticite", "Meca Flu"],
+    "GI1": ["RO", "RO - GRP1"],
+    "GI2": ["RO", "RO - GRP2"],
+
+    "MA": [],
+    "TM": [],
+    "GE": [],
+
+    "INFO": [],
+    "MAT": [],
+    "OM": []
+}

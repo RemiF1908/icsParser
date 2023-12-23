@@ -23,6 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $lv1 = $_POST["lv1"];
     $lv2 = $_POST["lv2"];
     $groupe = $_POST["groupe"];
+    $sgroupe = $_POST["sgroupe"];
+    $cursus = $_POST["cursus"];
 
     $id =uniqid();
     $userData = [
@@ -36,17 +38,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "LV1" => $lv1,
         "LV2" => $lv2,
         "groupe" => $groupe,
+        "sgroupe" => $sgroupe,
+        "cursus" => $cursus,
         "id" => $id
     ];
 
-    $existingData = json_decode(file_get_contents("userData.json"), true);
+    $existingData = json_decode(file_get_contents("userDataS4.json"), true);
 
     $existingData[] = $userData;
 
     // Encode le tableau mis à jour en JSON avec indentation
     $jsonData = json_encode($existingData, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 
-    file_put_contents("userDataTh.json", $jsonData);
+    file_put_contents("userDataS4.json", $jsonData);
     shell_exec('bash dlEDT.sh');
     echo "Voici le lien : <a>http://gga.alwaysdata.net/edt/edts/edt_".$id.".ics</a>";
 } else {

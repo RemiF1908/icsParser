@@ -61,7 +61,7 @@ $semester = "S4"
 <body>
     <div class="container">
         <h2>Formulaire de sélection</h2>
-        <form  action="<?php echo htmlspecialchars($semester); ?>" method="post">
+        <form  action="<?php echo htmlspecialchars("post".$semester); ?>" method="post">
             
             <label for="prenom">Prénom :</label>
             <input name="prenom" id="prenom" required >
@@ -123,6 +123,18 @@ $semester = "S4"
                 <option value="B">B</option>
                 <option value="C">C</option>
                 <option value="D">D</option>
+            </select>
+
+            <label for="sgroupe">Sous groupe :</label>
+            <select name="sgroupe" id="sgroupe" required >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
             </select>
 
             <label for="cursus">Cursus :</label>
