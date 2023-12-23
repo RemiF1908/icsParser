@@ -1,3 +1,7 @@
+<?php
+$semester = "S4"
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -57,49 +61,40 @@
 <body>
     <div class="container">
         <h2>Formulaire de sélection</h2>
-        <form action="./post" method="post">
+        <form  action="<?php echo htmlspecialchars("post".$semester); ?>" method="post">
             
             <label for="prenom">Prénom :</label>
-            <input name="prenom" required >
+            <input name="prenom" id="prenom" required >
             <label for="nom">Nom :</label>
-            <input name="nom" required >
+            <input name="nom" id="nom" required >
 
-            <label for="majeur1">Majeur 1 :</label>
-            <select name="majeur1" id="majeur1" required >
-                <option value="Info">Info</option>
-                <option value="Phy G1.1">Phy G1.1</option>
-                <option value="Phy G1.2">Phy G1.2</option>
-                <option value="Phy G2.1">Phy G2.1</option>
-                <option value="Phy G2.2">Phy G2.2</option>
-                <option value="Phy G3.1">Phy G3.1</option>
-                <option value="Phy G3.2">Phy G3.2</option>
+            <label for="th1">Thème 1 :</label>
+            <select name="th1" id="th1" required >
+                <option value="MF">Maths Fondamentales</option>
+                <option value="PC">Physique contemporaine</option>
+                <option value="GP">Génie des procédés</option>
+
             </select>
-            <label for="majeur2">Majeur 2 :</label>
-            <select name="majeur2" id="majeur2" required >
-                <option value="Chimie">Chimie</option>
-                <option value="Maths G1">Maths G1</option>
-                <option value="Maths G2">Maths G2</option>
-                <option value="SI G1">SI G1</option>
-                <option value="SI G1">SI G2</option>
+            <label for="th2">Thème 2 :</label>
+            <select name="th2" id="th2" required >
+                <option value="EL">Electronique</option>
+                <option value="MMC">Mécanique des milieux continues</option>
+                <option value="GI">Génie industriel</option>
+
             </select>
 
-            <label for="mineur1">Mineur 1 :</label>
-            <select name="mineur1" id="mineur1" required >
-                <option value="Chimie G1">Chimie G1</option>
-                <option value="Chimie G2">Chimie G2</option>
-                <option value="Chimie G3">Chimie G3</option>
-                <option value="Info G1">Info G1</option>
-                <option value="Info G2">Info G2</option>
-                <option value="Physique">Physique</option>
+            <label for="th3">Thème 3 :</label>
+            <select name="th3" id="th3" required >
+                <option value="MA">Maths appliquées</option>
+                <option value="TM">Technologie mécanique</option>
+                <option value="GE">Génie électrique</option>
             </select>
 
-            <label for="mineur2">Mineur 2 :</label>
-            <select required name="mineur2" id="mineur2" required >
-                <option value="Maths">Maths</option>
-                <option value="SI G1.1">SI G1.1</option>
-                <option value="SI G1.2">SI G1.2</option>
-                <option value="SI G2.1">SI G2.1</option>
-                <option value="SI G2.2">SI G2.2</option>
+            <label for="th4">Thème 4 :</label>
+            <select name="th4" id="th4" required >
+                <option value="INFO">Informatique</option>
+                <option value="MAT">Matériaux</option>
+                <option value="OM">Ondes et matières</option>
             </select>
 
             <label for="lv1">LV1 :</label>
@@ -122,7 +117,7 @@
                 <option value="ITA">Ita</option>
             </select>
 
-            <label for="lv2">Groupe :</label>
+            <label for="groupe">Groupe :</label>
             <select name="groupe" id="groupe" required >
                 <option value="A">A</option>
                 <option value="B">B</option>
@@ -130,9 +125,58 @@
                 <option value="D">D</option>
             </select>
 
-            <button type="submit">Envoyer</button>
+            <label for="sgroupe">Sous groupe :</label>
+            <select name="sgroupe" id="sgroupe" required >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+
+            <label for="cursus">Cursus :</label>
+            <select name="cursus" id="cursus" required >
+                <option value="main">Classique</option>
+                <option value="HN2">HN2</option>
+                <option value="HN3">HN3</option>
+            </select>
+
+            <label for="mountain">Massif :</label>
+            <select name="mountain" id="mountain" required >
+                <option value="bel">Belledonne</option>
+                <option value="char">Chartreuse</option>
+                <option value="ver">Vercors</option>
+            </select>
+
+            <button type="submit" onclick="displayErrorMessage()">Envoyer</button>
         </form>
+        <p id="errorMessage" style="color: red; display: none;">Ce site est réservé au gens de bon goût</p>
     </div>
-    <img src="https://cdn.discordapp.com/attachments/989459228534116362/1040592890633654292/logo_corn_copi_copie.png">
+
+    <img alt="logo CPP" src="https://cdn.discordapp.com/attachments/989459228534116362/1040592890633654292/logo_corn_copi_copie.png">
+
+    <script>
+        function checkSelectedOption() {
+            // Récupérer l'élément select
+            var selectField = document.getElementById("mountain");
+
+            // Récupérer l'index de l'option sélectionnée
+            return selectField.selectedIndex;
+
+        }
+
+        function displayErrorMessage() {
+            // Afficher le message d'erreur
+            var errorMessageElement = document.getElementById("errorMessage");
+            if (checkSelectedOption() !== 0){
+                errorMessageElement.style.display = "block";
+            }
+
+        }
+    </script>
+
 </body>
 </html>
