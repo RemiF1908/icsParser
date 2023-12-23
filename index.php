@@ -60,9 +60,9 @@
         <form action="./post" method="post">
             
             <label for="prenom">Prénom :</label>
-            <input name="prenom" required >
+            <input name="prenom" id="prenom" required >
             <label for="nom">Nom :</label>
-            <input name="nom" required >
+            <input name="nom" id="nom" required >
 
             <label for="th1">Thème 1 :</label>
             <select name="th1" id="th1" required >
@@ -113,7 +113,7 @@
                 <option value="ITA">Ita</option>
             </select>
 
-            <label for="lv2">Groupe :</label>
+            <label for="groupe">Groupe :</label>
             <select name="groupe" id="groupe" required >
                 <option value="A">A</option>
                 <option value="B">B</option>
@@ -140,7 +140,7 @@
         <p id="errorMessage" style="color: red; display: none;">Ce site est réservé au gens de bon goût</p>
     </div>
 
-    <img src="https://cdn.discordapp.com/attachments/989459228534116362/1040592890633654292/logo_corn_copi_copie.png">
+    <img alt="logo CPP" src="https://cdn.discordapp.com/attachments/989459228534116362/1040592890633654292/logo_corn_copi_copie.png">
 
     <script>
         function checkSelectedOption() {
@@ -148,16 +148,14 @@
             var selectField = document.getElementById("mountain");
 
             // Récupérer l'index de l'option sélectionnée
-            var selectedIndex = selectField.selectedIndex;
+            return selectField.selectedIndex;
 
-            // Récupérer la valeur de l'option sélectionnée
-            return selectedIndex;
         }
 
         function displayErrorMessage() {
             // Afficher le message d'erreur
             var errorMessageElement = document.getElementById("errorMessage");
-            if (checkSelectedOption() != 0){
+            if (checkSelectedOption() !== 0){
                 errorMessageElement.style.display = "block";
             }
 
