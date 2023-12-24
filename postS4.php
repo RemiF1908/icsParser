@@ -42,6 +42,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "cursus" => $cursus,
         "id" => $id
     ];
+    if ($cursus=="HN2"){
+        $groupe1A = $_POST["groupe1A"];
+        $userData["groupe1A"] = $groupe1A;
+    }
+
 
     $existingData = json_decode(file_get_contents("userDataS4.json"), true);
 
