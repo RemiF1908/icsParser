@@ -7,7 +7,7 @@ $semester = "S4"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire de sélection</title>
+    <title>EDT CPP</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -62,7 +62,7 @@ $semester = "S4"
     <div class="container">
         <h2>Formulaire de sélection</h2>
         <form  action="<?php echo htmlspecialchars("post".$semester); ?>" method="post">
-            
+
             <label for="prenom">Prénom :</label>
             <input name="prenom" id="prenom" required >
             <label for="nom">Nom :</label>
@@ -138,10 +138,18 @@ $semester = "S4"
             </select>
 
             <label for="cursus">Cursus :</label>
-            <select name="cursus" id="cursus" required >
+            <select name="cursus" id="cursus" onchange="hn2()" required >
                 <option value="main">Classique</option>
                 <option value="HN2">HN2</option>
                 <option value="HN3">HN3</option>
+            </select>
+
+            <label id="labGrp1A" for="groupe1A" hidden>Groupe 1A :</label>
+            <select hidden name="groupe1A" id="groupe1A"  required >
+                <option value="1AA">A</option>
+                <option value="1AB">B</option>
+                <option value="1AC">C</option>
+                <option value="1AD">D</option>
             </select>
 
             <label for="mountain">Massif :</label>
@@ -153,7 +161,7 @@ $semester = "S4"
 
             <button type="submit" onclick="displayErrorMessage()">Envoyer</button>
         </form>
-        <p id="errorMessage" style="color: red; display: none;">Ce site est réservé au gens de bon goût</p>
+        <p id="errorMessage" style="color: red; display: none;">Ce site est réservé aux gens de bon goût</p>
     </div>
 
     <img alt="logo CPP" src="https://cdn.discordapp.com/attachments/989459228534116362/1040592890633654292/logo_corn_copi_copie.png">
@@ -165,6 +173,20 @@ $semester = "S4"
 
             // Récupérer l'index de l'option sélectionnée
             return selectField.selectedIndex;
+
+        }
+        function hn2(){
+            var cursus = document.getElementById("cursus");
+            var labGrp1A = document.getElementById("labGrp1A");
+            var grp1A = document.getElementById("groupe1A");
+            if (cursus.selectedIndex == 1){
+                grp1A.style.display = "block";
+                labGrp1A.style.display = "block";
+            }
+            else{
+                grp1A.style.display = "none";
+                labGrp1A.style.display = "none";
+            }
 
         }
 
