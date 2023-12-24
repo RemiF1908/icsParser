@@ -11,5 +11,10 @@ if semester == "S3":
 if semester == "S4":
     with open("userDataS4.json", "r") as read_file:
         data = json.load(read_file)
+
     for value in data:
-        edtParseS4(value["LV1"], value["LV2"], value["Theme1"], value["Theme2"], value["Theme3"], value["Theme4"], value["groupe"], value["sgroupe"],value["cursus"], value["id"])
+        if not "groupe1A" in value.keys():
+            grp1A = None
+        else:
+            grp1A = value["groupe1A"]
+        edtParseS4(value["LV1"], value["LV2"], value["Theme1"], value["Theme2"], value["Theme3"], value["Theme4"], value["groupe"], value["sgroupe"],value["cursus"], grp1A, value["id"])

@@ -5,6 +5,7 @@
 
     "EL": ["Electronique analogique", "Electronique numerique"],
     "MMC": ["Elasticite", "Meca Flu"],
+    "GI": ["RO", "RO - GRP1", "RO - GRP2"],
     "GI1": ["RO", "RO - GRP1"],
     "GI2": ["RO", "RO - GRP2"],
 
