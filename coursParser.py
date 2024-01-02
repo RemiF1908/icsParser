@@ -1,16 +1,36 @@
 # -*- coding: utf-8 -*-
 from icalendar import Calendar, Event
 import json
+import requests
+from requests.auth import HTTPBasicAuth
 
 '''
 Ce programme permet de detecter les cours présent dans l'EDT qui ne sont pas encore répertorier dans cours.json
 '''
 semestre = "S4"
-g = open('ADECal.ics','rb')
+
+
+url = "https://edt.grenoble-inp.fr/directCal/2023-2024/etudiant/prepaINPGrenoble?resources=1471,1468,1472,1469"
+utilisateur =
+mot_de_passe =
+
+# Utiliser l'authentification de base
+auth = HTTPBasicAuth(utilisateur, mot_de_passe)
+
+# Effectuer la requête GET pour télécharger le fichier
+response = requests.get(url, auth=auth)
+
+# Vérifier si la requête a réussi (code 200)
+if response.status_code == 200:
+    # Enregistrer le contenu du fichier
+    g = response.content
+    print("Téléchargement réussi.")
+else:
+    print(f"Échec du téléchargement. Code d'état : {response.status_code}")
 
 cal = Calendar()
 cal.add('version', '2.0')
-gcal = Calendar.from_ical(g.read())
+gcal = Calendar.from_ical(g)
 
 
 
