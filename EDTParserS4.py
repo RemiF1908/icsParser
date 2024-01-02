@@ -19,6 +19,11 @@ def edtParseS4(lv1, lv2, th1, th2, th3, th4, groupe, sgroupe, cursus, grp1A, id)
         edtADEHN3 = open('ADECal_' + grpLangue + '.ics', 'rb')
         edtADECalHN3 = Calendar.from_ical(edtADEHN3.read())
 
+    if cursus == 'HN2':
+
+        edtADEHN2 = open('ADECal1A' + '.ics', 'rb')
+        edtADECalHN2 = Calendar.from_ical(edtADEHN2.read())
+
     cal = Calendar()
     cal.add('version', '2.0')
     edtADECal = Calendar.from_ical(edtADE.read())
@@ -28,8 +33,9 @@ def edtParseS4(lv1, lv2, th1, th2, th3, th4, groupe, sgroupe, cursus, grp1A, id)
 
 
     cours.remove("Projet - G"+sgroupe)
-    cours.remove(lv1)
-    cours.remove(lv2)
+    if cursus != "HN2":
+        cours.remove(lv1)
+        cours.remove(lv2)
 
 
     with open("coursS4.json", "r") as read_file:
@@ -50,16 +56,22 @@ def edtParseS4(lv1, lv2, th1, th2, th3, th4, groupe, sgroupe, cursus, grp1A, id)
     edtADE.close()
 
 
-    edtADE.close()
-
-
     if cursus == "HN3":
         cours+=["Maths S4", "Optique ondulatoire", "TC S4 Info", "TH3"]
+
+    if cursus == "HN2":
+        cours1A=["maths", "physique", "info", "anglais"]
+        cours = ["chimie", "anglais", "projet"]
+        for group, nameCourses in data.items():
+            for courses in nameCourses:
+                cours.append(courses)
+
+
 
     for component in edtADECal.walk():
         if component.name == "VEVENT":
             if component.get('summary') not in cours:
-                    #------Type de cours------
+                #------Type de cours------
                 desc = component.get('description')[10:].lower()
                 if "ctd" in desc:
                     summary=component.get('summary')
@@ -73,14 +85,22 @@ def edtParseS4(lv1, lv2, th1, th2, th3, th4, groupe, sgroupe, cursus, grp1A, id)
                 if "cm" in desc:
                     summary=component.get('summary')
                     component["SUMMARY"] += " CM"
-
-                cal.add_component(component)
-
+                if cursus == "HN2":
+                    if set([i in component.get('summary').lower() for i in cours]) == {False}:
+                        cal.add_component(component)
+                else:
+                    cal.add_component(component)
 
     if cursus == "HN3":
         for component in edtADECalHN3.walk():
             if component.name == "VEVENT":
                 if lv2 in component.get('summary'):
+                    cal.add_component(component)
+
+    if cursus == "HN2":
+        for component in edtADECalHN2.walk():
+            if component.name == "VEVENT":
+                if set([i in component.get('summary').lower() for i in cours1A ]) == {False} :
                     cal.add_component(component)
 
 
