@@ -103,7 +103,6 @@ def edtParseS4(lv1, lv2, th1, th2, th3, th4, groupe, sgroupe, cursus, grp1A, id)
                 if set([i in component.get('summary').lower() for i in cours1A ]) == {False} :
                     cal.add_component(component)
 
- v
     f = open('edts/edt_'+id+'.ics', 'wb')
     f.write(cal.to_ical())
     f.close()

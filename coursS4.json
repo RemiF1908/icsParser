@@ -1,13 +1,13 @@
 {
-    "MF": ["Espaces vectoriels normes"],
+    "MF": ["Espaces vectoriels normes", "eve 2"],
     "PC": ["Physique nucleaire", "Physique quantique", "Physique quantique - VISITE -"],
     "GP": ["Genie des procedes"],
 
     "EL": ["Electronique analogique", "Electronique numerique"],
     "MMC": ["Elasticite", "Meca Flu"],
-    "GI": ["RO", "RO - GRP1", "RO - GRP2", "Ingegnierie Systemes"],
-    "GI1": ["RO", "RO - GRP1", "Ingegnierie Systemes"],
-    "GI2": ["RO", "RO - GRP2", "Ingegnierie Systemes"],
+    "GI": ["RO", "RO - GRP1", "RO - GRP2", "Ingegnierie Systemes", "RO - G1", "RO G1+G2", "RO - G2", "Ingegnierie Systemes G1+G2"],
+    "GI1": ["RO", "RO - GRP1", "Ingegnierie Systemes", "RO - G1"],
+    "GI2": ["RO", "RO - GRP2", "Ingegnierie Systemes", "RO - G2"],
 
     "MA": [],
     "TM": [],
