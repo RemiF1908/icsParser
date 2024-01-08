@@ -62,7 +62,6 @@ for e in coursEDT:
 print(coursAdd)
 
 
-g.close()
 
 
 
