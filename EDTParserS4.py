@@ -50,7 +50,6 @@ def edtParseS4(lv1, lv2, th1, th2, th3, th4, groupe, sgroupe, cursus, grp1A, id)
         if group not in [th1, th2, th3, th4]:
             for courses in nameCourses :
                 if courses not in cours2:
-                    print(courses)
                     cours.append(courses)
 
     edtADE.close()
