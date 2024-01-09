@@ -77,23 +77,31 @@ $semester = "S4"
             </select>
             <label for="th2">Thème 2 :</label>
             <select name="th2" id="th2" required >
-                <option value="EL">Electronique</option>
+                <option value="EL1">Electronique 1</option>
+                <option value="EL2">Electronique 2</option>
                 <option value="MMC">Mécanique des milieux continues</option>
-                <option value="GI">Génie industriel</option>
+                <option value="GI2">Génie industriel 1</option>
+                <option value="GI1">Génie industriel 2</option>
+
 
             </select>
 
             <label for="th3">Thème 3 :</label>
             <select name="th3" id="th3" required >
-                <option value="MA">Maths appliquées</option>
+                <option value="MA&">Maths appliquées 1</option>
+                <option value="MAé">Maths appliquées 2</option>
                 <option value="TM">Technologie mécanique</option>
-                <option value="GE">Génie électrique</option>
+                <option value="GE1">Génie électrique 1</option>
+                <option value="GE2">Génie électrique 2</option>
+                <option value="GE3">Génie électrique 3</option>
+
             </select>
 
             <label for="th4">Thème 4 :</label>
             <select name="th4" id="th4" required >
                 <option value="INFO">Informatique</option>
-                <option value="MAT">Matériaux</option>
+                <option value="MAT1">Matériaux 1</option>
+                <option value="MAT2">Matériaux 2</option>
                 <option value="OM">Ondes et matières</option>
             </select>
 
@@ -140,7 +148,7 @@ $semester = "S4"
             <label for="cursus">Cursus :</label>
             <select name="cursus" id="cursus" onchange="hn2()" required >
                 <option value="main">Classique</option>
-                <option value="HN2">HN2</option>
+                <!-- <option value="HN2">HN2</option> -->
                 <option value="HN3">HN3</option>
             </select>
 

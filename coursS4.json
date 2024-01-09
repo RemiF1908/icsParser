@@ -3,17 +3,22 @@
     "PC": ["Physique nucleaire", "Physique quantique", "Physique quantique - VISITE -"],
     "GP": ["Genie des procedes"],
 
-    "EL": ["Electronique analogique", "Electronique numerique"],
+    "EL1": ["Electronique analogique", "Electronique numerique"],
+    "EL2": ["Electronique analogique", "Electronique numerique"],
     "MMC": ["Elasticite", "Meca Flu"],
     "GI": ["RO", "RO - GRP1", "RO - GRP2", "Ingegnierie Systemes", "RO - G1", "RO G1+G2", "RO - G2", "Ingegnierie Systemes G1+G2"],
-    "GI1": ["RO", "RO - GRP1", "Ingegnierie Systemes", "RO - G1"],
-    "GI2": ["RO", "RO - GRP2", "Ingegnierie Systemes", "RO - G2"],
+    "GI1": ["RO", "RO - GRP1", "Ingegnierie Systemes", "RO - G1", "Ingegnierie Systemes G1+G2", "RO G1+G2"],
+    "GI2": ["RO", "RO - GRP2", "Ingegnierie Systemes", "RO - G2", "Ingegnierie Systemes G1+G2", "RO G1+G2"],
 
-    "MA": [],
+    "MA1": [],
+    "MA2": [],
     "TM": [],
-    "GE": [],
+    "GE1": [],
+    "GE2": [],
+    "GE3": [],
 
     "INFO": [],
-    "MAT": [],
+    "MAT1": [],
+    "MAT2": [],
     "OM": []
 }
