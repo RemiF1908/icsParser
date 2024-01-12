@@ -80,16 +80,16 @@ $semester = "S4"
                 <option value="EL1">Electronique 1</option>
                 <option value="EL2">Electronique 2</option>
                 <option value="MMC">Mécanique des milieux continues</option>
-                <option value="GI2">Génie industriel 1</option>
-                <option value="GI1">Génie industriel 2</option>
+                <option value="GI1">Génie industriel 1</option>
+                <option value="GI2">Génie industriel 2</option>
 
 
             </select>
 
             <label for="th3">Thème 3 :</label>
             <select name="th3" id="th3" required >
-                <option value="MA&">Maths appliquées 1</option>
-                <option value="MAé">Maths appliquées 2</option>
+                <option value="MA1">Maths appliquées 1</option>
+                <option value="MA2">Maths appliquées 2</option>
                 <option value="TM">Technologie mécanique</option>
                 <option value="GE1">Génie électrique 1</option>
                 <option value="GE2">Génie électrique 2</option>
