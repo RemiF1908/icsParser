@@ -1,19 +1,19 @@
 {
     "MF": ["Espaces vectoriels normes", "eve 2"],
     "PC": ["Physique nucleaire", "Physique quantique", "Physique quantique - VISITE -"],
-    "GP": ["Genie des procedes"],
+    "GP": ["Genie des procedes", "Genie des procedes -AMPHI NORD"],
 
-    "EL": ["Electronique analogique", "Electronique numerique", "Electronique numerique TP G1 + G2", "Electronique analogique TP G1", "Electronique analogique TP G2", "Electronique analogique - amphi nord"],
-    "EL1": ["Electronique analogique", "Electronique numerique", "Electronique numerique TP G1 + G2", "Electronique analogique TP G1", "Electronique analogique - amphi nord"],
-    "EL2": ["Electronique analogique", "Electronique numerique", "Electronique numerique TP G1 + G2", "Electronique analogique TP G2", "Electronique analogique - amphi nord"],
+    "EL": ["Electronique analogique", "Electronique numerique", "Electronique numerique TP G1 + G2", "Electronique analogique TP G1", "Electronique analogique TP G2", "Electronique analogique - amphi nord", "Electronique numerique - AMPHI VAUJANY"],
+    "EL1": ["Electronique analogique", "Electronique numerique", "Electronique numerique TP G1 + G2", "Electronique analogique TP G1", "Electronique analogique - amphi nord", "Electronique numerique - AMPHI VAUJANY"],
+    "EL2": ["Electronique analogique", "Electronique numerique", "Electronique numerique TP G1 + G2", "Electronique analogique TP G2", "Electronique analogique - amphi nord", "Electronique numerique - AMPHI VAUJANY"],
     "MMC": ["Elasticite", "Meca Flu"],
     "GI": ["RO", "RO - GRP1", "RO - GRP2", "Ingegnierie Systemes", "RO - G1", "RO G1+G2", "RO - G2", "Ingegnierie Systemes G1+G2", "Ingegnierie Systemes - AMPHI NORD", "Ingegnierie Systemes -"],
     "GI1": ["RO", "RO - GRP1", "Ingegnierie Systemes", "RO - G1", "Ingegnierie Systemes G1+G2", "RO G1+G2", "Ingegnierie Systemes - AMPHI NORD", "Ingegnierie Systemes -"],
     "GI2": ["RO", "RO - GRP2", "Ingegnierie Systemes", "RO - G2", "Ingegnierie Systemes G1+G2", "RO G1+G2", "Ingegnierie Systemes - AMPHI NORD", "Ingegnierie Systemes -"],
 
-    "MA1": ["Methodes num et alg lin CM G1+G2"],
-    "MA2": ["Methodes num et alg lin CM G1+G2"],
-    "TM": ["Theorie des mecanismes"],
+    "MA1": ["Methodes num et alg lin CM G1+G2", "Proba G1+G2", "Methodes num et alg lin TD G1"],
+    "MA2": ["Methodes num et alg lin CM G1+G2", "Proba G1+G2", "Methodes num et alg lin TDG2"],
+    "TM": ["Theorie des mecanismes", "RDM"],
     "GE1": ["Electrotech G1+G2+G3"],
     "GE2": ["Electrotech G1+G2+G3"],
     "GE3": ["Electrotech G1+G2+G3"],
@@ -21,5 +21,5 @@
     "INFO": ["Info - RDN"],
     "MAT1": ["TDLM -Thermo G1+G2"],
     "MAT2": ["TDLM -Thermo G1+G2"],
-    "OM": ["OEM - Lasers"]
+    "OM": ["OEM - Lasers", "OEM - Milieux dielectriques"]
 }
