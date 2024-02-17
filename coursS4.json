@@ -11,14 +11,17 @@
     "GI1": ["RO", "RO - GRP1", "Ingegnierie Systemes", "RO - G1", "Ingegnierie Systemes G1+G2", "RO G1+G2", "Ingegnierie Systemes - AMPHI NORD", "Ingegnierie Systemes -"],
     "GI2": ["RO", "RO - GRP2", "Ingegnierie Systemes", "RO - G2", "Ingegnierie Systemes G1+G2", "RO G1+G2", "Ingegnierie Systemes - AMPHI NORD", "Ingegnierie Systemes -"],
 
+    "MA": ["Methodes num et alg lin CM G1+G2", "Proba G1+G2", "Methodes num et alg lin TD G1", "Methodes num et alg lin TDG2"],
     "MA1": ["Methodes num et alg lin CM G1+G2", "Proba G1+G2", "Methodes num et alg lin TD G1"],
     "MA2": ["Methodes num et alg lin CM G1+G2", "Proba G1+G2", "Methodes num et alg lin TDG2"],
     "TM": ["Theorie des mecanismes", "RDM"],
+    "GE": ["Electrotech G1+G2+G3"],
     "GE1": ["Electrotech G1+G2+G3"],
     "GE2": ["Electrotech G1+G2+G3"],
     "GE3": ["Electrotech G1+G2+G3"],
 
     "INFO": ["Info - RDN"],
+    "MAT": ["TDLM -Thermo G1+G2"],
     "MAT1": ["TDLM -Thermo G1+G2"],
     "MAT2": ["TDLM -Thermo G1+G2"],
     "OM": ["OEM - Lasers", "OEM - Milieux dielectriques"]
