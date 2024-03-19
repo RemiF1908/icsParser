@@ -15,14 +15,14 @@
     "MA1": ["Methodes num et alg lin CM G1+G2", "Proba G1+G2", "Methodes num et alg lin TD G1", "Methodes num et alg lin TP G1", "Methodes num et alg lin"],
     "MA2": ["Methodes num et alg lin CM G1+G2", "Proba G1+G2", "Methodes num et alg lin TDG2",  "Methodes num et alg lin TPG2", "Methodes num et alg lin"],
     "TM": ["Theorie des mecanismes", "RDM"],
-    "GE": ["Electrotech G1+G2+G3", "Pilotage sources de production G1+G2+G3", "Electrotech G1", "Electrotech G3", "Pilotage sources de production TP G1", "Electrotech G2"],
-    "GE1": ["Electrotech G1+G2+G3", "Pilotage sources de production G1+G2+G3", "Electrotech G1", "Pilotage sources de production TP G1"],
-    "GE2": ["Electrotech G1+G2+G3", "Pilotage sources de production G1+G2+G3", "Electrotech G2"],
-    "GE3": ["Electrotech G1+G2+G3", "Pilotage sources de production G1+G2+G3", "Electrotech G3"],
+    "GE": ["Electrotech G1+G2+G3", "Pilotage sources de production G1+G2+G3", "Electrotech G1", "Electrotech G3", "Pilotage sources de production TP G1", "Electrotech G2", "Electrotech", "Pilotage sources de production TP G2"],
+    "GE1": ["Electrotech G1+G2+G3", "Pilotage sources de production G1+G2+G3", "Electrotech G1", "Pilotage sources de production TP G1", "Electrotech"],
+    "GE2": ["Electrotech G1+G2+G3", "Pilotage sources de production G1+G2+G3", "Electrotech G2", "Electrotech", "Pilotage sources de production TP G2"],
+    "GE3": ["Electrotech G1+G2+G3", "Pilotage sources de production G1+G2+G3", "Electrotech G3", "Electrotech"],
 
     "INFO": ["Info - RDN", "Info - Algo"],
-    "MAT": ["TDLM -Thermo G1+G2","TDLM - Materiaux BE G2"],
-    "MAT1": ["TDLM -Thermo G1+G2"],
-    "MAT2": ["TDLM -Thermo G1+G2","TDLM - Materiaux BE G2"],
+    "MAT": ["TDLM -Thermo G1+G2","TDLM - Materiaux BE G2", "TDLM - Materiaux G1+G2"],
+    "MAT1": ["TDLM -Thermo G1+G2", "TDLM - Materiaux G1+G2"],
+    "MAT2": ["TDLM -Thermo G1+G2","TDLM - Materiaux BE G2", "TDLM - Materiaux G1+G2"],
     "OM": ["OEM - Lasers", "OEM - Milieux dielectriques"]
 }
